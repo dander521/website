@@ -6,11 +6,11 @@
         <div class="swiper-wrapper">
           <div class="swiper-slide" v-for="(item,index) in swiperList" :key="index">
             <img class="swiper-lazy" :data-src="item.img" alt="轮播图">
-            <div class="swiper-lazy-preloader"></div>
+            <!-- <div class="swiper-lazy-preloader"></div>
             <div class="swiper-slide-title">
                 <h1>{{item.title}}</h1>
                 <p>{{item.content}}</p>
-            </div>
+            </div> -->
           </div>
         </div>
         <!-- 如果需要分页器 -->
@@ -22,7 +22,7 @@
       </div>
     </div>
     <!-- 大数据管理系统 -->
-    <div id="bigData" class="container-fuild">
+    <!-- <div id="bigData" class="container-fuild">
       <div class="row bigData-container">
         <div class="col-xs-12 col-sm-12 col-md-6 wow zoomIn">
           <img class="img-responsive" src="@/assets/img/img1.png" alt="大数据管理系统">
@@ -38,9 +38,9 @@
           <a href="#" class="btn btn-lg btn-block btn-info">联系我们</a>
         </div>
       </div>
-    </div>
+    </div> -->
     <!-- 您身边的IT专家 -->
-    <div id="contactUs" class="container-fuild text-center">
+    <!-- <div id="contactUs" class="container-fuild text-center">
       <div class="container contactUs-container wow slideInUp">
         <h1>您身边的IT专家</h1>
         <h3>7x24小时提供出色的IT服务</h3>
@@ -55,9 +55,9 @@
           <span></span>
         </div>
       </div>
-    </div>
+    </div> -->
     <!-- 客户评价 -->
-    <div id="customer" class="container-fuild">
+    <!-- <div id="customer" class="container-fuild">
       <div class="container customer-container">
         <p class="customer-title text-center">客户评价</p>
         <div class="swiper-container customer-swiper hidden-xs">
@@ -79,7 +79,6 @@
               <div class="customer-content2">{{item.title}}</div>
             </div>
           </div>
-          <!-- 如果需要导航按钮 -->
           <div class="swiper-button-prev"></div>
           <div class="swiper-button-next"></div>
         </div>
@@ -100,9 +99,9 @@
           </div>
         </div>
       </div>
-    </div>
+    </div> -->
     <!-- 为什么选择我们 -->
-    <div id="whyChooseUs" class="conatiner-fuild">
+    <!-- <div id="whyChooseUs" class="conatiner-fuild">
       <div class="container">
         <div class="whyChooseUs-title text-center">
           <p>为什么选择我们的服务</p>
@@ -131,7 +130,7 @@
           </div>
         </div>
       </div>
-    </div>
+    </div> -->
   </div>
 </template>
 <script>
@@ -143,25 +142,37 @@ export default {
     return {
       swiperList: [
         {
-          img: require("@/assets/img/banner1.png"),
+          img: require("@/assets/img/banner/banner1.jpg"),
           path: "",
           title: '您身边的IT专家1',
           content: '宣传简介宣传简介宣传简介宣传简介宣传简介宣传简介宣传简介宣传简介',
         },
         {
-          img: require("@/assets/img/banner2.jpg"),
+          img: require("@/assets/img/banner/banner2.jpg"),
           path: "",
           title: '您身边的IT专家2',
           content: '宣传简介宣传简介宣传简介宣传简介宣传简介宣传简介宣传简介宣传简介',
         },
         {
-          img: require("@/assets/img/banner1.png"),
+          img: require("@/assets/img/banner/banner3.jpg"),
           path: "",
           title: '您身边的IT专家3',
           content: '宣传简介宣传简介宣传简介宣传简介宣传简介宣传简介宣传简介宣传简介',
         },
         {
-          img: require("@/assets/img/banner2.jpg"),
+          img: require("@/assets/img/banner/banner4.jpg"),
+          path: "",
+          title: '您身边的IT专家4',
+          content: '宣传简介宣传简介宣传简介宣传简介宣传简介宣传简介宣传简介宣传简介',
+        },
+        {
+          img: require("@/assets/img/banner/banner5.jpg"),
+          path: "",
+          title: '您身边的IT专家3',
+          content: '宣传简介宣传简介宣传简介宣传简介宣传简介宣传简介宣传简介宣传简介',
+        },
+        {
+          img: require("@/assets/img/banner/banner6.jpg"),
           path: "",
           title: '您身边的IT专家4',
           content: '宣传简介宣传简介宣传简介宣传简介宣传简介宣传简介宣传简介宣传简介',

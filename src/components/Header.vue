@@ -88,46 +88,46 @@ export default {
       menuClass: "glyphicon glyphicon-menu-down",
       navList: [
         {
-          name: "首页",
+          name: "Home",
           path: "/",
           children: []
         },
         {
-          name: "软件产品",
+          name: "Products",
           path: "/software",
           children: [
             {
-              name: "智能小镇管理系统",
+              name: "Cotton Cellulose",
               path: "/software/smartTown"
             },
             {
-              name: "大数据管理系统",
+              name: "Chemicals",
               path: "/software/bigData"
             }
           ]
         },
+        // {
+        //   name: "相关服务",
+        //   path: "/service",
+        //   children: []
+        // },
         {
-          name: "相关服务",
-          path: "/service",
-          children: []
-        },
-        {
-          name: "新闻动态",
+          name: "Certifications",
           path: "/newsinformation",
           children: []
         },
         {
-          name: "公司介绍",
+          name: "About Us",
           path: "/companyintroduction",
           children: []
         },
+        // {
+        //   name: "工作机会",
+        //   path: "/jobchance",
+        //   children: []
+        // },
         {
-          name: "工作机会",
-          path: "/jobchance",
-          children: []
-        },
-        {
-          name: "联系我们",
+          name: "Contact Us",
           path: "/contactus",
           children: []
         }

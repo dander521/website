@@ -2,18 +2,19 @@
     <div id="NewsInformation">
         <div class="container">
             <div class="container text-center">
-                <h3>新闻动态</h3>
+                <h3>Certifications</h3>
                 <p style="color:#b2b2b2">Company News</p>
             </div>
             <div class="nav container text-center">
-                <a href="#" class="active">公司新闻</a>
-                <a href="#">行业动态</a>
+                <a href="#" class="active">ISO</a>
+                <a href="#">Other</a>
             </div>
             <ul class="news-container container-fuild">
                 <li v-for="(item,index) in newsList" :key="index" class="wow fadeIn">
                     <div class="content">
                         <p>{{item.title}}</p>
                         <p>{{item.introduce}}</p>
+                        <img :src="item.image" @click="showImage(item.image)">
                     </div>
                     <div class="time">
                         <p>{{item.date}}</p>
@@ -40,40 +41,39 @@ export default {
             newsList:[
                 {
                     id: '001',
-                    title: '世界上第一个程序员',
-                    introduce: '为计算程序拟定“算法”，写作的第四份“程序设计流程图”，被珍视为“第一位给计算机',
+                    title: 'ISO 9001:2015',
+                    introduce: '为计算程序拟定"算法"，写作的第四份"程序设计流程图"，被珍视为"第一位给计算机',
                     date: '05-24',
-                    year: '2019'
+                    year: '2019',
+                    image: require('@/assets/img/cer/c1.png')
                 },{
                     id: '002',
-                    title: '世界上第二个程序员',
-                    introduce: '为计算程序拟定“算法”，写作的第四份“程序设计流程图”，被珍视为“第一位给计算机',
+                    title: 'ISO 14001:2015',
+                    introduce: '为计算程序拟定"算法"，写作的第四份"程序设计流程图"，被珍视为"第一位给计算机',
                     date: '05-24',
-                    year: '2019'
+                    year: '2019',
+                    image: require('@/assets/img/cer/c2.png')
                 },{
                     id: '003',
-                    title: '世界上第三个程序员',
-                    introduce: '为计算程序拟定“算法”，写作的第四份“程序设计流程图”，被珍视为“第一位给计算机',
+                    title: 'ISO 45001:2018',
+                    introduce: '为计算程序拟定"算法"，写作的第四份"程序设计流程图"，被珍视为"第一位给计算机',
                     date: '05-24',
-                    year: '2019'
+                    year: '2019',
+                    image: require('@/assets/img/cer/c3.png')
                 },{
                     id: '004',
-                    title: '世界上第四个程序员',
-                    introduce: '为计算程序拟定“算法”，写作的第四份“程序设计流程图”，被珍视为“第一位给计算机',
+                    title: 'ISO 14001:2015',
+                    introduce: '为计算程序拟定"算法"，写作的第四份"程序设计流程图"，被珍视为"第一位给计算机',
                     date: '05-24',
-                    year: '2019'
+                    year: '2019',
+                    image: require('@/assets/img/cer/c4.png')
                 },{
                     id: '005',
-                    title: '世界上第五个程序员',
-                    introduce: '为计算程序拟定“算法”，写作的第五份“程序设计流程图”，被珍视为“第一位给计算机',
+                    title: 'Ecovadis',
+                    introduce: '为计算程序拟定"算法"，写作的第五份"程序设计流程图"，被珍视为"第一位给计算机',
                     date: '05-24',
-                    year: '2019'
-                },{
-                    id: '006',
-                    title: '世界上第六个程序员',
-                    introduce: '为计算程序拟定“算法”，写作的第五份“程序设计流程图”，被珍视为“第一位给计算机',
-                    date: '05-24',
-                    year: '2019'
+                    year: '2019',
+                    image: require('@/assets/img/cer/Ecovadis.png')
                 }
             ]
         }
@@ -82,6 +82,17 @@ export default {
         var wow = new WOW();
         wow.init();
     },
+    methods: {
+        showImage(image) {
+            if (image) {
+                // Create a modal or use browser's built-in image viewer
+                window.open(image, '_blank');
+            } else {
+                // If no image is provided, you could show a default image or alert
+                alert('No image available');
+            }
+        }
+    }
 }
 </script>
 <style scoped>
@@ -111,17 +122,20 @@ export default {
 }
 .news-container>li{
     width: 55.6%;
-    height: 120px;
+    height: 200px;
     float: left;
     color: #333;
     text-align: right;
     border-left: 1px solid transparent;
     border-right: 1px solid transparent;
+    position: relative;
+    box-sizing: border-box;
 }
 .news-container>li:hover{
     color: #1e73be;
-    border: 1px solid #1e73be;
+    /* border: 1px solid #1e73be; */
     cursor: pointer;
+    box-sizing: border-box;
 }
 .news-container>li:nth-of-type(2n){
     float: right;
@@ -131,11 +145,19 @@ export default {
     width: 60%;
     float: left;
     padding: 20px 0;
+    box-sizing: border-box;
+}
+.news-container>li>.content>img{
+    width: 100px;
+    height: 200px;
+    object-fit: cover;
+    cursor: pointer;
 }
 .news-container>li>.time{
     width: 20%;
     float: left;
     padding: 10px 0;
+    box-sizing: border-box;
 }
 .news-container>li>.time>p{
     font-size: 30px;
@@ -146,6 +168,7 @@ export default {
     height: 100%;
     float: left;
     position: relative;
+    box-sizing: border-box;
 }
 .news-container>li>.circle>img{
     position: absolute;
@@ -177,6 +200,13 @@ export default {
     position: absolute;
     top: 50%;
     left: 50%;
+}
+
+/* Clearfix to ensure border wraps around all content */
+.news-container>li::after {
+    content: "";
+    display: table;
+    clear: both;
 }
 .more{
     font-size: 25px;

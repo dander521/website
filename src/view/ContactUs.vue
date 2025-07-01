@@ -1,6 +1,6 @@
 <template>
   <div id="ContactUs">
-    <div class="banner container-fuild text-center">联系我们</div>
+    <div class="banner container-fuild text-center">Contact Us</div>
     <div class="container">
       <div class="container-fuild ContactUs-container">
         <div class="row">

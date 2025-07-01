@@ -1,6 +1,12 @@
 <template>
     <div id="smartTown">
-        智能小镇管理系统
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <h1>Cotton Cellulose</h1>
+                </div>
+            </div>
+        </div>
     </div>
 </template>
 <script>

@@ -3,7 +3,7 @@
     <div class="logo">
       <img src="@/assets/img/logo_white.png" alt="logo图">
     </div>
-    <p class="title">ChongYu</p>
+    <!-- <p class="title">ChongYu</p> -->
     <p class="address_tel_fax">
       <span>地址：西安市科技路50号，金桥国际广场 C-1810</span>
       <span>Tel：+86-29-88332231 / 88332232</span>

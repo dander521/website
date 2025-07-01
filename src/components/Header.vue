@@ -5,8 +5,8 @@
     <div class="header-top container-fuild hidden-xs">
       <div class="container">
         <div class="server pull-left">
-          <span class="glyphicon glyphicon-earphone"></span>888-888-888
-          <span class="glyphicon glyphicon-envelope"></span>xxx@163.com
+          <span class="glyphicon glyphicon-earphone"></span>+86-29-88332231 / 88332232
+          <span class="glyphicon glyphicon-envelope"></span>sales@chonyu.com
           <span class="glyphicon glyphicon-time"></span>7x24小时为您服务
         </div>
         <div class="shejiao pull-right">

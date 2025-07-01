@@ -45,7 +45,7 @@
     </div>
   </div>
 </template>
-<script>
+<!-- <script>
 import { WOW } from 'wowjs'
 import BMap from "BMap";
 export default {
@@ -74,7 +74,7 @@ export default {
     wow.init();
   }
 };
-</script>
+</script> -->
 <style scoped>
 .banner {
   color: #fff;

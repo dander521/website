@@ -35,9 +35,15 @@ export default {
   text-align: center;
 }
 .logo {
-  width: 95px;
-  height: 45px;
-  margin: 50px auto 20px;
+  width: 150px;
+  height: 150px;
+  margin: 0 auto;
+  display: block;
+}
+.logo img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
 }
 .title {
   font-size: 25px;

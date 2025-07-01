@@ -148,8 +148,8 @@ export default {
     box-sizing: border-box;
 }
 .news-container>li>.content>img{
-    width: 100px;
-    height: 200px;
+    width: 95px;
+    height: 45px;
     object-fit: cover;
     cursor: pointer;
 }
